@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depression</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="second.html" class="w3-bar-item w3-button">Prediction</a>
+    <a href="#" class="w3-bar-item w3-button">Map</a>
+    <a href="#" class="w3-bar-item w3-button">Graph</a>
+    <a href="details.html" class="w3-bar-item w3-button">Data</a>
+  </div>
+
+  <div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>What Is Depression?</h1>
+    </div>
+  </div>
+
+  <div class="w3-container">
+  <p>Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Fortunately, it is also treatable. Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home.</p>
+
+  <p>Depression symptoms can vary from mild to severe and can include:</p>
+  <ul>
+    <li>Feeling sad or having a depressed mood</li>
+    <li>Loss of interest or pleasure in activities once enjoyed</li>
+    <li>Changes in appetite — weight loss or gain unrelated to dieting</li>
+    <li>Trouble sleeping or sleeping too much</li>
+    <li>Loss of energy or increased fatigue</li>
+    <li>Feeling worthless or guilty</li>
+    <li>Difficulty thinking, concentrating or making decisions</li>
+  </ul>
+  <br>
+  <h2>Self-help and Coping</h2>
+  <p>There are a number of things people can do to help reduce the symptoms of depression. For many people, regular exercise helps create positive feeling and improves mood. Getting enough quality sleep on a regular basis, eating a healthy diet and avoiding alcohol (a depressant) can also help reduce symptoms of depression.</p>
+  <p>Depression is a real illness and help is available. With proper diagnosis and treatment, the vast majority of people with depression will overcome it. If you are experiencing symptoms of depression, a first step is to see your family physician or psychiatrist. Talk about your concerns and request a thorough evaluation. This is a start to addressing your mental health needs.</p>
+  <footer>
+  <p>For more details, visit <a href="https://psychiatry.org/patients-families/depression/what-is-depression">American Psychiatric Association</a></p>
+  </footer>
+</div>
+
+</div>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+  </body>
+  </html>
